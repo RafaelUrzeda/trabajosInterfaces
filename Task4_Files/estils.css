@@ -1,0 +1,60 @@
+/* TASK 4 CSS */
+body {
+    background-color: grey;
+}
+
+/* colocacion y estilo del titulo */
+p#titol {
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 10px;
+    text-align: center;
+}
+
+/* colocacion y estilo del unico h2 */
+h2 {
+    position: absolute;
+    top: 150px;
+    left: 32%;
+    z-index: 1;
+    color: white;
+}
+
+/* colocacion y estilo del div#imatges, donde estaran todas las imagenes */
+div#imatges {
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 10px auto;
+    height: 350px;
+    width: 70%;
+    position: relative; /* Para que los elementos absolutos se ubiquen en relación a este div */
+}
+
+/* colocacion y estilo de la primera imagen */
+img#model {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: 60%;
+}
+
+/* colocacion y estilo de la segunda imagen */
+img#scissors {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 25%;
+    height: auto;
+}
+
+/* colocacion y estilo del div#descripcio */
+.description {
+    position: absolute;
+    bottom: 30px; 
+    left: 15%;
+    top: 400px;
+    font-size: 1.5em;
+    color: yellowgreen;
+}

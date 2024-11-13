@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a0c62;
+    padding: 20px;
+    height: 120px;
+    color: white;
+    position: relative;
+}
+
+/* el logo tiene que ir pegado a la izquierda */
+.logo {
+    height: 119px;
+    margin-left: -20px;
+    margin-top: -3px;
+}
+
+.header h1 {
+    position: relative;
+    right: 350px;
+}
+
+.header p {
+    position: absolute;
+    right: 420px;
+    bottom: 10px;
+    font-size: 14px;
+}
+
+.tagline {
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+    font-size: 14px;
+}
+
+#mosaico {
+    height: 100px;
+    width: 1000px;
+    position: absolute;
+    object-fit: cover;
+    top: 170px;
+}
+
+#tabla {
+    background-color: #bdbdbd;
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabla h1 {
+    font-weight: bold; /* Negrita */
+    text-decoration: underline; /* Subrayado */
+}
+
+.nav {
+    display: flex;
+    justify-content: left;
+    padding: 10px 0; /* Espacio vertical alrededor de los botones */
+    height: 50px;
+    position: relative;
+    top: -10px;
+}
+
+.nav button {
+    background-color: #7e58a0; /* Mismo color púrpura para los botones */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Negrita */
+    border: white; /* Sin borde predeterminado */
+    width: 100px; /* Ancho fijo de 100px */
+    height: 50px;
+    padding: 10px 0; /* Espacio interno en los botones */
+    font-family: Arial, sans-serif; /* Fuente similar a la imagen */
+    text-align: center; /* Centrar texto dentro del botón */
+    border-right: 2px solid #ffffff; /* Línea separadora entre botones */
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-image {
+    width: 1000px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    top: 50px;
+}
+
+.grades {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.grades h2 {
+    font-weight: bold;
+}
+
+/* Tabla simulada con divs */
+.table {
+    display: table;
+    width: 500px; /* Ajuste automático al contenido */
+    height: 100px;
+    border-collapse: collapse;
+}
+
+/* Filas */
+.row {
+    display: table-row;
+}
+.rowHeader {
+    display: table-row;
+    padding: 12px 20px; /* Más padding para parecerse a la imagen */
+    text-align: center; /* Centrado del texto en las celdas */
+    border: 0px #661089;
+    background-color: #661089;
+}
+/* Celdas */
+.cell {
+    display: table-cell;
+    padding: 6px 20px; /* Más padding para parecerse a la imagen */
+    border: none;
+    text-align: center; /* Centrado del texto en las celdas */
+}
+
+.title {
+    /* centrar el titulo al centro de la tabla */
+    position: absolute;
+    left: 350px;
+}
+
+/* Estilo de la cabecera */
+.header {
+    font-weight: bold;
+    background-color: #21052c; /* Color púrpura del encabezado */
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid black; /* Línea negra debajo de la cabecera */
+}
+
+/* Colorear filas alternas */
+.row:nth-child(odd) {
+    background-color: #dcdcdc; /* Gris claro */
+}
+
+.row:nth-child(even) {
+    background-color: #a9a9a9; /* Gris más oscuro */
+}
+
+th,
+td {
+    border: 1px solid #4a0c62;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4a0c62;
+    color: white;
+}
+
+.technologies {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 0 50px;
+    height: 300px;
+}
+
+.tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: -50px;
+    left: -50px;
+    border: 2px solid #000000; /* Línea separadora entre botones */
+
+}
+
+.tech img {
+    left: -50px;
+    width: 247.5px;
+    height: 300px;
+}
+
+
+.footer {
+    background-color: #21052c;
+    color: white;
+    padding: 20px;
+    margin-top: 0px;
+    position: relative; /* Necesario para posicionar los elementos hijos */
+}
+
+.footer p {
+    margin: 0;
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor relativo */
+}
+
+.footer p:first-child {
+    top: 0; /* Pegado arriba */
+    left: 0; /* Pegado a la izquierda */
+    padding: 10px; /* Espaciado interno opcional para separación del borde */
+}
+
+.footer p:last-child {
+    bottom: 0; /* Pegado abajo */
+    right: 0; /* Pegado a la derecha */
+    padding: 10px; /* Espaciado interno opcional para separación del borde */
+}
