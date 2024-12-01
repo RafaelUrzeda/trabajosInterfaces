@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise CSS Grid: Layering items with z-index</title>
+  <style>
+    body {
+      margin: 40px;
+    }
+
+    .box {
+      background-color: #444;
+      color: #fff;
+      width: 45%;
+      height: 45%;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .i {
+      background-color: rgba(49, 121, 207, 0.5);
+      width: 200px;
+      height: 200px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .wrapper {
+    background-color: #fff;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw; 
+    position: relative; 
+}
+
+    .box.i {
+      background-color: rgba(49, 121, 207, 0.5);
+      width: 200px;
+      height: 200px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box a">A</div>
+    <div class="box b">B</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+
+    <div class="box i">I</div>
+  </div>
+</body>
+
+</html>
