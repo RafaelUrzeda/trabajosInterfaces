@@ -1,0 +1,10 @@
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin text-style($color, $font-size) {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: $color;
+    font-size: $font-size;
+}

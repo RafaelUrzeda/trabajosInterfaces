@@ -1,0 +1,33 @@
+// Deprecation Warning: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+// me sale este mensaje de warning asi que he decidido cambiar a use 
+@use "./scss/variables" as *;
+@use "./scss/mixins" as *;
+@use "./scss/functions" as *;
+
+.profile-card {
+  background: $color-primario;
+  padding: 20px;
+
+  .name {
+    @include text-style($color-primario, $tamano-fuente-grande);
+    font-weight: bold;
+  }
+
+  .role {
+    @include text-style($color-secundario, $tamano-fuente-pequeno);
+    font-style: italic;
+  }
+}
+
+.avatar {
+  @include border-radius(50%);
+  border: 2px solid ajustament($color-primario, 10%);
+}
+
+.card {
+  @if $pantalla-grande {
+    padding: 40px;
+  } @else {
+    padding: 20px;
+  }
+}
